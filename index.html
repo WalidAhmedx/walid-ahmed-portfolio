@@ -1,192 +1,2178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Walid Ahmed - Finance & Data Automation Expert</title>
-  <meta name="description" content="Professional Finance & Data Automation services including AR Dashboards, SAP FI-AR Optimization, E-Invoice Tools, and Python/SQL automation solutions.">
-  <meta name="keywords" content="Finance Automation, Data Analytics, Power BI, SAP FI-AR, E-Invoice, Python, SQL, Dashboard Development">
-  <meta name="author" content="Walid Ahmed">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body{box-sizing:border-box;font-family:'Inter',sans-serif}
-    .gradient-bg{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}
-    .card-hover{transition:all .3s ease}
-    .card-hover:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.1)}
-    .nav-link{position:relative;transition:color .3s ease}
-    .nav-link:hover{color:#667eea}
-    .nav-link.active::after{content:'';position:absolute;bottom:-2px;left:0;width:100%;height:2px;background:#667eea}
-    .hero-animation{animation:fadeInUp 1s ease-out}
-    @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-    .skill-bar{height:8px;background:#e5e7eb;border-radius:4px;overflow:hidden}
-    .skill-progress{height:100%;background:linear-gradient(90deg,#667eea,#764ba2);border-radius:4px;transition:width 2s ease-in-out}
-    .chart-container{position:relative;height:300px;background:white;border-radius:8px;padding:20px;box-shadow:0 4px 6px rgba(0,0,0,.1)}
-    .kpi-card{background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%);border-left:4px solid #667eea}
-    .mobile-menu{transform:translateX(-100%);transition:transform .3s ease}
-    .mobile-menu.active{transform:translateX(0)}
-    .lazy-load{opacity:0;transition:opacity .3s ease}
-    .lazy-load.loaded{opacity:1}
-    /* Minimal styling to blend the transparent portrait without frames */
-    .portrait {object-fit: cover; mix-blend-mode: multiply;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walid Ahmed - Finance & Data Automation Expert</title>
+    <meta name="description" content="Professional Finance & Data Automation services including AR Dashboards, SAP FI-AR Optimization, E-Invoice Tools, and Python/SQL automation solutions.">
+    <meta name="keywords" content="Finance Automation, Data Analytics, Power BI, SAP FI-AR, E-Invoice, Python, SQL, Dashboard Development">
+    <meta name="author" content="Walid Ahmed">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Walid Ahmed - Finance & Data Automation Expert">
+    <meta property="og:description" content="Professional Finance & Data Automation services including AR Dashboards, SAP FI-AR Optimization, and Python/SQL solutions.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #667eea;
+        }
+        
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #667eea;
+        }
+        
+        .hero-animation {
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 2s ease-in-out;
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .kpi-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-left: 4px solid #667eea;
+        }
+        
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        .lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .lazy-load.loaded {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
-  <!-- Navigation -->
-  <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center"><div class="flex-shrink-0"><h1 class="text-2xl font-bold text-gray-800">Walid Ahmed</h1></div></div>
-        <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-8">
-            <a href="#home" class="nav-link active text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
-            <a href="#services" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Services</a>
-            <a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Portfolio</a>
-            <a href="#dashboard" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Dashboard</a>
-            <a href="#blog" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Blog</a>
-            <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
-            <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Testimonials</a>
-            <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
-          </div>
-        </div>
-        <div class="md:hidden">
-          <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
-            <i class="fas fa-bars text-xl"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div id="mobile-menu" class="mobile-menu md:hidden fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50">
-      <div class="p-4">
-        <div class="flex justify-between items-center mb-8">
-          <h2 class="text-xl font-bold text-gray-800">Menu</h2>
-          <button id="close-mobile-menu" class="text-gray-700 hover:text-blue-600"><i class="fas fa-times text-xl"></i></button>
-        </div>
-        <div class="space-y-4">
-          <a href="#home" class="block text-gray-700 hover:text-blue-600 py-2">Home</a>
-          <a href="#services" class="block text-gray-700 hover:text-blue-600 py-2">Services</a>
-          <a href="#portfolio" class="block text-gray-700 hover:text-blue-600 py-2">Portfolio</a>
-          <a href="#dashboard" class="block text-gray-700 hover:text-blue-600 py-2">Dashboard</a>
-          <a href="#blog" class="block text-gray-700 hover:text-blue-600 py-2">Blog</a>
-          <a href="#about" class="block text-gray-700 hover:text-blue-600 py-2">About</a>
-          <a href="#testimonials" class="block text-gray-700 hover:text-blue-600 py-2">Testimonials</a>
-          <a href="#contact" class="block text-gray-700 hover:text-blue-600 py-2">Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Home Section -->
-  <section id="home" class="gradient-bg min-h-screen flex items-center pt-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <div class="text-center hero-animation">
-        <!-- Profile Photo (replacing icon with your transparent portrait) -->
-        <div class="mb-8">
-          <div class="w-48 h-48 mx-auto rounded-full bg-white p-2 shadow-2xl">
-            <div class="w-full h-full rounded-full overflow-hidden">
-              <img src="assets/profile.png" alt="Walid Ahmed" class="w-full h-full portrait">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-gray-800">Walid Ahmed</h1>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link active text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#services" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Portfolio</a>
+                        <a href="#dashboard" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Dashboard</a>
+                        <a href="#blog" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Blog</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Testimonials</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
-          </div>
         </div>
-        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">Walid Ahmed</h1>
-        <h2 class="text-2xl md:text-3xl text-blue-100 mb-6">Finance & Data Automation Expert</h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Transforming financial processes through intelligent automation, advanced analytics, and custom dashboard solutions. 
-          Specializing in AR optimization, SAP FI integration, and Python-powered data workflows.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="assets/Walid_Ahmed_CV.pdf" download class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 shadow-lg">
-            <i class="fas fa-download mr-2"></i>Download CV
-          </a>
-          <a href="#portfolio" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
-            <i class="fas fa-briefcase mr-2"></i>Explore Portfolio
-          </a>
-          <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
-            <i class="fas fa-envelope mr-2"></i>Contact Me
-          </a>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50">
+            <div class="p-4">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+                    <button id="close-mobile-menu" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="space-y-4">
+                    <a href="#home" class="block text-gray-700 hover:text-blue-600 py-2">Home</a>
+                    <a href="#services" class="block text-gray-700 hover:text-blue-600 py-2">Services</a>
+                    <a href="#portfolio" class="block text-gray-700 hover:text-blue-600 py-2">Portfolio</a>
+                    <a href="#dashboard" class="block text-gray-700 hover:text-blue-600 py-2">Dashboard</a>
+                    <a href="#blog" class="block text-gray-700 hover:text-blue-600 py-2">Blog</a>
+                    <a href="#about" class="block text-gray-700 hover:text-blue-600 py-2">About</a>
+                    <a href="#testimonials" class="block text-gray-700 hover:text-blue-600 py-2">Testimonials</a>
+                    <a href="#contact" class="block text-gray-700 hover:text-blue-600 py-2">Contact</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Services Section (unchanged from Canva) -->
-  <!-- Due to length, services/portfolio/blog/testimonials/contact are kept identical to the Canva code structure.
-       Only the video blocks and the About avatar are adapted below. -->
-
-  <!-- (The rest of the sections come from the Canva HTML. For brevity, we keep key replacements.) -->
-
-  <!-- Video Demos (replace placeholders with actual videos) -->
-  <section id="video-demos" class="py-12 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Video Demonstrations</h3>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <video controls class="w-full rounded-lg" preload="metadata">
-            <source src="assets/video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <h4 class="font-semibold text-gray-800 mt-4 mb-1">Complete Dashboard Walkthrough</h4>
-          <p class="text-gray-600 text-sm">5-minute overview of dashboard features and capabilities</p>
+    <!-- Home Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center hero-animation">
+                <!-- Profile Photo -->
+                <div class="mb-8">
+                    <div class="w-48 h-48 mx-auto rounded-full bg-white p-2 shadow-2xl">
+                        <div class="w-full h-full rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                            <i class="fas fa-user text-6xl text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">Walid Ahmed</h1>
+                <h2 class="text-2xl md:text-3xl text-blue-100 mb-6">Finance & Data Automation Expert</h2>
+                
+                <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Transforming financial processes through intelligent automation, advanced analytics, and custom dashboard solutions. 
+                    Specializing in AR optimization, SAP FI integration, and Python-powered data workflows.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="downloadCV()" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 shadow-lg">
+                        <i class="fas fa-download mr-2"></i>Download CV
+                    </button>
+                    <a href="#portfolio" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
+                        <i class="fas fa-briefcase mr-2"></i>Explore Portfolio
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <video controls class="w-full rounded-lg" preload="metadata">
-            <source src="assets/video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <h4 class="font-semibold text-gray-800 mt-4 mb-1">Advanced Analytics & Automation</h4>
-          <p class="text-gray-600 text-sm">Deep dive into automated workflows and predictive analytics</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section (replace avatar with portrait) -->
-  <section id="about" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="w-64 h-64 mx-auto lg:mx-0 rounded-full overflow-hidden shadow-xl">
-            <img src="assets/profile.png" alt="Walid Ahmed" class="w-full h-full portrait">
-          </div>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Professional Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive finance and data automation solutions designed to streamline your operations and drive growth
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Service 1 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">AR Automation & Dashboards</h3>
+                    <p class="text-gray-600 mb-6">Interactive Power BI, Streamlit, and Dash dashboards with real-time KPIs, automated reporting, and advanced analytics for accounts receivable management.</p>
+                    <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                        <li>• Real-time AR aging analysis</li>
+                        <li>• Automated collection workflows</li>
+                        <li>• Performance tracking & alerts</li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">SAP FI-AR Optimization</h3>
+                    <p class="text-gray-600 mb-6">Complete SAP Financial Accounting optimization with custom reports, automated reconciliation, and streamlined AR processes.</p>
+                    <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                        <li>• Custom SAP report development</li>
+                        <li>• Automated reconciliation processes</li>
+                        <li>• Integration with external systems</li>
+                    </ul>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-file-invoice text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">E-Invoice & VAT Tools</h3>
+                    <p class="text-gray-600 mb-6">VAT-compliant e-invoicing solutions with automated tax calculations, government integration, and comprehensive reporting.</p>
+                    <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                        <li>• Government API integration</li>
+                        <li>• Automated VAT calculations</li>
+                        <li>• Compliance reporting</li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Workflow Apps Development</h3>
+                    <p class="text-gray-600 mb-6">Custom web and mobile applications for workflow automation, multi-role management, and process optimization.</p>
+                    <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                        <li>• Multi-role workflow systems</li>
+                        <li>• Real-time tracking & notifications</li>
+                        <li>• Mobile-responsive design</li>
+                    </ul>
+                    <button class="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Data Cleaning & Automation</h3>
+                    <p class="text-gray-600 mb-6">Python and SQL-powered data processing, cleaning, and automation solutions for improved data quality and operational efficiency.</p>
+                    <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                        <li>• Automated data validation</li>
+                        <li>• ETL pipeline development</li>
+                        <li>• Data quality monitoring</li>
+                    </ul>
+                    <button class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Training & Documentation</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive training programs and documentation for teams to maximize the value of implemented solutions.</p>
+                    <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                        <li>• Custom training materials</li>
+                        <li>• Video tutorials & guides</li>
+                        <li>• Ongoing support & maintenance</li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="text-center bg-gray-50 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Transform Your Finance Operations?</h3>
+                <p class="text-gray-600 mb-6">Let's discuss how these solutions can drive efficiency and growth for your business.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://www.upwork.com/freelancers/waliddatax" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300">
+                        <i class="fab fa-upwork mr-2"></i>Hire me on Upwork
+                    </a>
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Send a Message
+                    </a>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">
+                    <i class="fas fa-star text-yellow-500"></i>
+                    Clients can rate and review my work on Upwork for transparency and quality assurance
+                </p>
+            </div>
         </div>
-        <div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-6">About Walid Ahmed</h3>
-          <p class="text-gray-600 leading-relaxed">
-            Finance & Data professional with 10+ years of experience in Accounts Receivable, SAP FI-AR, and financial automation.
-            I build dashboards, workflow apps, and automation tools using Python, Power BI, and Streamlit.
-          </p>
-          <div class="mt-6">
-            <a href="assets/Walid_Ahmed_CV.pdf" download class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-              <i class="fas fa-file-pdf mr-2"></i> Download CV
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Simple Contact Footer -->
-  <footer id="contact" class="bg-gray-900 text-gray-200 py-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="font-semibold text-lg">Let's work together</p>
-      <p class="text-sm mt-2">walahmed.career@gmail.com • Giza, Egypt</p>
-      <div class="flex gap-4 justify-center mt-4 text-xl">
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
-      <p class="text-xs mt-6">© <span id="year"></span> Walid Ahmed</p>
-    </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
-</body>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Portfolio & Case Studies</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Real-world solutions that delivered measurable results for clients across various industries
+                </p>
+            </div>
+            
+            <div class="space-y-12">
+                <!-- Project 1: Chloride Egypt App -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-gradient-to-br from-blue-500 to-purple-600 p-8 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i class="fas fa-truck text-6xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">Chloride Egypt</h3>
+                                <p class="text-blue-100">Workflow & Delivery App</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <div class="mb-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Multi-Role Workflow & Delivery Tracking System</h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Streamlit</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Real-time Tracking</span>
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Multi-Role</span>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">🎯 Problem</h4>
+                                    <p class="text-gray-600">Manual delivery tracking across Finance, Sales, Warehouse, and Driver teams led to delays, miscommunication, and poor visibility into order status.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">💡 Solution</h4>
+                                    <p class="text-gray-600">Developed a comprehensive web application with role-based dashboards, real-time order tracking, automated notifications, and integrated reporting system.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">📈 Results</h4>
+                                    <ul class="text-gray-600 space-y-1">
+                                        <li>• 40% reduction in delivery delays</li>
+                                        <li>• 60% improvement in order visibility</li>
+                                        <li>• 25% increase in customer satisfaction</li>
+                                        <li>• Automated reporting saved 15 hours/week</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex gap-4">
+                                <button onclick="showProjectDetails('chloride')" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                    View Details
+                                </button>
+                                <button class="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition duration-300">
+                                    Live Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: E-Invoice Studio -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-gradient-to-br from-green-500 to-teal-600 p-8 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i class="fas fa-file-invoice-dollar text-6xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">E-Invoice Studio</h3>
+                                <p class="text-green-100">VAT-Compliant SaaS</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <div class="mb-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">VAT-Compliant Invoicing SaaS Platform</h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">SaaS</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">VAT Compliance</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Paymob Integration</span>
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">API Integration</span>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">🎯 Problem</h4>
+                                    <p class="text-gray-600">Businesses struggled with VAT compliance requirements, manual invoice generation, and payment processing integration challenges.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">💡 Solution</h4>
+                                    <p class="text-gray-600">Built a complete SaaS platform with automated VAT calculations, government API integration, Paymob payment processing, and comprehensive reporting.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">📈 Results</h4>
+                                    <ul class="text-gray-600 space-y-1">
+                                        <li>• 100% VAT compliance accuracy</li>
+                                        <li>• 80% reduction in invoice processing time</li>
+                                        <li>• 50+ businesses onboarded</li>
+                                        <li>• 99.9% uptime with automated backups</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex gap-4">
+                                <button onclick="showProjectDetails('einvoice')" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                                    View Details
+                                </button>
+                                <button class="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition duration-300">
+                                    Live Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Warehouse Dashboard -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-gradient-to-br from-purple-500 to-pink-600 p-8 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i class="fas fa-warehouse text-6xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">Warehouse Dashboard</h3>
+                                <p class="text-purple-100">Interactive Analytics</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <div class="mb-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Interactive Warehouse Analytics Dashboard</h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Power BI</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Interactive Filters</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">KPI Tracking</span>
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Export Features</span>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">🎯 Problem</h4>
+                                    <p class="text-gray-600">Warehouse operations lacked real-time visibility into inventory levels, performance metrics, and operational efficiency indicators.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">💡 Solution</h4>
+                                    <p class="text-gray-600">Created an interactive Power BI dashboard with real-time KPIs, advanced filtering, trend analysis, and automated export capabilities.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">📈 Results</h4>
+                                    <ul class="text-gray-600 space-y-1">
+                                        <li>• 35% improvement in inventory accuracy</li>
+                                        <li>• 50% faster decision-making process</li>
+                                        <li>• 20% reduction in operational costs</li>
+                                        <li>• Real-time alerts prevented stockouts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex gap-4">
+                                <button onclick="showProjectDetails('warehouse')" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition duration-300">
+                                    View Details
+                                </button>
+                                <a href="#dashboard" class="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition duration-300">
+                                    Try Interactive Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Agriculture Dashboard -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-gradient-to-br from-green-600 to-lime-600 p-8 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i class="fas fa-seedling text-6xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">Agriculture Analytics</h3>
+                                <p class="text-green-100">Sustainability Tracking</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <div class="mb-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Agriculture & Forestry Analytics Dashboard</h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Power BI</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Yield Analysis</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Cost Tracking</span>
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Sustainability</span>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">🎯 Problem</h4>
+                                    <p class="text-gray-600">Agricultural operations needed comprehensive tracking of yield performance, cost analysis, and sustainability metrics across multiple farms.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">💡 Solution</h4>
+                                    <p class="text-gray-600">Developed a Power BI dashboard integrating yield data, cost analysis, weather patterns, and sustainability indicators with predictive analytics.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">📈 Results</h4>
+                                    <ul class="text-gray-600 space-y-1">
+                                        <li>• 25% increase in crop yield optimization</li>
+                                        <li>• 30% reduction in operational costs</li>
+                                        <li>• Improved sustainability score by 40%</li>
+                                        <li>• Data-driven decisions increased ROI</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex gap-4">
+                                <button onclick="showProjectDetails('agriculture')" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                                    View Details
+                                </button>
+                                <button class="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition duration-300">
+                                    Case Study
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Trading Tracker -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-gradient-to-br from-orange-500 to-red-600 p-8 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i class="fas fa-chart-bar text-6xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">Trading Tracker</h3>
+                                <p class="text-orange-100">ROI Analytics</p>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <div class="mb-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Automated Trading & ROI Analytics System</h3>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Python</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Excel Integration</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">ROI Analysis</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">SME Focus</span>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">🎯 Problem</h4>
+                                    <p class="text-gray-600">Small and medium enterprises needed an affordable, automated solution for tracking trading activities and calculating ROI without complex software.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">💡 Solution</h4>
+                                    <p class="text-gray-600">Built a Python-Excel integrated system with automated data entry, ROI calculations, performance tracking, and insightful reporting for SMEs.</p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">📈 Results</h4>
+                                    <ul class="text-gray-600 space-y-1">
+                                        <li>• 90% reduction in manual data entry</li>
+                                        <li>• Real-time ROI tracking and alerts</li>
+                                        <li>• 15+ SMEs improved profitability</li>
+                                        <li>• Average 20% increase in trading efficiency</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex gap-4">
+                                <button onclick="showProjectDetails('trading')" class="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition duration-300">
+                                    View Details
+                                </button>
+                                <button class="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition duration-300">
+                                    Download Template
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Dashboard Section -->
+    <section id="dashboard" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Interactive AR Dashboard Demo</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience a live demonstration of our accounts receivable analytics dashboard with real-time filtering and export capabilities
+                </p>
+            </div>
+            
+            <!-- Dashboard Controls -->
+            <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Department</label>
+                        <select id="dept-filter" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="all">All Departments</option>
+                            <option value="finance">Finance</option>
+                            <option value="sales">Sales</option>
+                            <option value="operations">Operations</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Customer Type</label>
+                        <select id="customer-filter" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="all">All Customers</option>
+                            <option value="enterprise">Enterprise</option>
+                            <option value="sme">SME</option>
+                            <option value="individual">Individual</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Time Range</label>
+                        <select id="time-filter" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="30">Last 30 Days</option>
+                            <option value="90">Last 90 Days</option>
+                            <option value="180">Last 6 Months</option>
+                            <option value="365">Last Year</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button onclick="applyFilters()" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                            <i class="fas fa-filter mr-2"></i>Apply Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- KPI Cards -->
+            <div class="grid md:grid-cols-4 gap-6 mb-8">
+                <div class="kpi-card p-6 rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">Total Outstanding</p>
+                            <p id="total-outstanding" class="text-3xl font-bold text-gray-800">$2.4M</p>
+                            <p class="text-sm text-green-600">↓ 12% from last month</p>
+                        </div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-dollar-sign text-blue-600 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="kpi-card p-6 rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">Overdue Amount</p>
+                            <p id="overdue-amount" class="text-3xl font-bold text-red-600">$485K</p>
+                            <p class="text-sm text-red-600">↑ 5% from last month</p>
+                        </div>
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-exclamation-triangle text-red-600 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="kpi-card p-6 rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">Collection Efficiency</p>
+                            <p id="collection-efficiency" class="text-3xl font-bold text-green-600">87%</p>
+                            <p class="text-sm text-green-600">↑ 8% from last month</p>
+                        </div>
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="kpi-card p-6 rounded-xl">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-medium text-gray-600">Avg. Collection Days</p>
+                            <p id="avg-days" class="text-3xl font-bold text-orange-600">42</p>
+                            <p class="text-sm text-green-600">↓ 3 days from last month</p>
+                        </div>
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-calendar text-orange-600 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Charts Section -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <!-- AR Aging Analysis Chart -->
+                <div class="chart-container">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">AR Aging Analysis</h3>
+                    <canvas id="agingChart" width="400" height="300"></canvas>
+                </div>
+                
+                <!-- Collection Trends Chart -->
+                <div class="chart-container">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Collection Trends (6 Months)</h3>
+                    <canvas id="trendsChart" width="400" height="300"></canvas>
+                </div>
+                
+                <!-- Department Performance Chart -->
+                <div class="chart-container">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Department Performance</h3>
+                    <canvas id="deptChart" width="400" height="300"></canvas>
+                </div>
+                
+                <!-- Customer Distribution Chart -->
+                <div class="chart-container">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Customer Distribution</h3>
+                    <canvas id="customerChart" width="400" height="300"></canvas>
+                </div>
+                
+                <!-- Monthly Collections Chart -->
+                <div class="chart-container lg:col-span-2">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Monthly Collections</h3>
+                    <canvas id="collectionsChart" width="800" height="300"></canvas>
+                </div>
+            </div>
+            
+            <!-- Export and Actions -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button onclick="exportData('csv')" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                    <i class="fas fa-file-csv mr-2"></i>Export to CSV
+                </button>
+                <button onclick="exportData('excel')" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                    <i class="fas fa-file-excel mr-2"></i>Export to Excel
+                </button>
+                <button onclick="generateReport()" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300">
+                    <i class="fas fa-file-pdf mr-2"></i>Generate Report
+                </button>
+                <button onclick="scheduleReport()" class="bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition duration-300">
+                    <i class="fas fa-clock mr-2"></i>Schedule Report
+                </button>
+            </div>
+            
+            <!-- Video Demos -->
+            <div class="bg-gray-50 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Video Demonstrations</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="aspect-video bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-play-circle text-6xl text-blue-600 mb-2"></i>
+                                <p class="text-gray-600">Dashboard Overview</p>
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Complete Dashboard Walkthrough</h4>
+                        <p class="text-gray-600 text-sm">5-minute overview of all dashboard features and capabilities</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="aspect-video bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-play-circle text-6xl text-green-600 mb-2"></i>
+                                <p class="text-gray-600">Advanced Features</p>
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Advanced Analytics & Automation</h4>
+                        <p class="text-gray-600 text-sm">Deep dive into automated workflows and predictive analytics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Blog & Insights</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Educational content, case studies, and industry insights on finance automation and data analytics
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>December 15, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Automating AR Processes: A Complete Guide</h3>
+                        <p class="text-gray-600 mb-4">Learn how to implement end-to-end automation in your accounts receivable processes, from invoice generation to payment collection.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Automation</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">AR</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Process</span>
+                        </div>
+                        <button onclick="readBlogPost('ar-automation')" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                        <i class="fas fa-chart-pie text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>December 10, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Power BI vs Tableau: Which is Right for Finance?</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive comparison of leading BI tools specifically for financial reporting and analytics use cases.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Power BI</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Analytics</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Comparison</span>
+                        </div>
+                        <button onclick="readBlogPost('powerbi-tableau')" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                        <i class="fas fa-file-invoice text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>December 5, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">E-Invoice Compliance: Egypt's New Requirements</h3>
+                        <p class="text-gray-600 mb-4">Everything businesses need to know about Egypt's e-invoice regulations and how to ensure full compliance.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">E-Invoice</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Compliance</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Egypt</span>
+                        </div>
+                        <button onclick="readBlogPost('einvoice-compliance')" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 4 -->
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-python text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>November 28, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Python for Finance: Essential Libraries and Tools</h3>
+                        <p class="text-gray-600 mb-4">A practical guide to the most important Python libraries for financial analysis, automation, and reporting.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Finance</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Tutorial</span>
+                        </div>
+                        <button onclick="readBlogPost('python-finance')" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 5 -->
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-database text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>November 20, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>9 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Data Quality in Financial Reporting: Best Practices</h3>
+                        <p class="text-gray-600 mb-4">How to ensure data accuracy and consistency in financial reports through automated validation and cleaning processes.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs">Data Quality</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Reporting</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Best Practices</span>
+                        </div>
+                        <button onclick="readBlogPost('data-quality')" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 6 -->
+                <article class="card-hover bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-teal-500 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>November 15, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Case Study: 40% Reduction in AR Processing Time</h3>
+                        <p class="text-gray-600 mb-4">How a manufacturing company achieved dramatic efficiency gains through intelligent automation of their AR processes.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-teal-100 text-teal-800 px-2 py-1 rounded text-xs">Case Study</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Success Story</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">ROI</span>
+                        </div>
+                        <button onclick="readBlogPost('case-study-ar')" class="text-blue-600 hover:text-blue-800 font-medium">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button onclick="loadMorePosts()" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                    <i class="fas fa-plus mr-2"></i>Load More Posts
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Walid Ahmed</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Passionate about transforming financial operations through intelligent automation and data-driven insights
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="w-64 h-64 mx-auto lg:mx-0 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center mb-8">
+                        <i class="fas fa-user text-8xl text-white"></i>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">My Story & Approach</h3>
+                    <div class="space-y-4 text-gray-600">
+                        <p>
+                            With over 5 years of experience in finance and data automation, I specialize in transforming complex financial processes into streamlined, intelligent systems. My journey began in traditional finance roles, where I witnessed firsthand the inefficiencies that manual processes create.
+                        </p>
+                        <p>
+                            This experience drove me to master cutting-edge technologies like Python, Power BI, SAP FI, and modern web development frameworks. I don't just build solutions – I create systems that grow with your business and deliver measurable ROI.
+                        </p>
+                        <p>
+                            My approach is always client-first: I take time to understand your unique challenges, design solutions that fit your workflow, and provide comprehensive training to ensure long-term success. Every project is an opportunity to deliver exceptional value and build lasting partnerships.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Core Expertise</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Python & Data Automation</span>
+                                    <span class="text-sm text-gray-500">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Power BI & Analytics</span>
+                                    <span class="text-sm text-gray-500">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">SAP FI-AR</span>
+                                    <span class="text-sm text-gray-500">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Web Development</span>
+                                    <span class="text-sm text-gray-500">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Process Optimization</span>
+                                    <span class="text-sm text-gray-500">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Why Choose Me?</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">Results-Driven</h5>
+                                    <p class="text-sm text-gray-600">Focus on measurable ROI and business impact</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">Full-Stack Expertise</h5>
+                                    <p class="text-sm text-gray-600">End-to-end solution development</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">Client Partnership</h5>
+                                    <p class="text-sm text-gray-600">Long-term support and collaboration</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">Industry Knowledge</h5>
+                                    <p class="text-sm text-gray-600">Deep understanding of finance operations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Client Testimonials</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    What clients say about working with me and the results we've achieved together
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ahmed Hassan</h4>
+                            <p class="text-sm text-gray-600">Finance Director, Manufacturing Co.</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Walid transformed our AR processes completely. The dashboard he built gives us real-time visibility we never had before. Our collection efficiency improved by 35% in just 3 months."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Sarah Mohamed</h4>
+                            <p class="text-sm text-gray-600">CEO, Tech Startup</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "The e-invoice solution Walid developed saved us countless hours and ensured 100% compliance. His attention to detail and technical expertise are exceptional."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Omar Khalil</h4>
+                            <p class="text-sm text-gray-600">Operations Manager, Logistics</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Working with Walid was a game-changer. The workflow app he built streamlined our entire delivery process. Communication improved dramatically across all teams."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Fatima Ali</h4>
+                            <p class="text-sm text-gray-600">CFO, Retail Chain</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Walid's Power BI dashboards gave us insights we never knew we needed. The ROI was immediate, and the training he provided ensured our team could maintain everything."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-red-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Mahmoud Farid</h4>
+                            <p class="text-sm text-gray-600">Business Owner, SME</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "As a small business, we needed cost-effective solutions. Walid delivered exactly what we needed within budget. The trading tracker he built increased our profitability by 20%."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Nadia Youssef</h4>
+                            <p class="text-sm text-gray-600">Finance Manager, Healthcare</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Walid's expertise in SAP FI optimization was exactly what we needed. The custom reports and automated reconciliation processes saved us 20 hours per week."
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Join These Success Stories?</h3>
+                    <p class="text-gray-600 mb-6">
+                        Let's discuss how I can help transform your finance operations and deliver measurable results for your business.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://www.upwork.com/freelancers/waliddatax" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300">
+                            <i class="fab fa-upwork mr-2"></i>View Upwork Profile
+                        </a>
+                        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                            <i class="fas fa-envelope mr-2"></i>Start Your Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to transform your finance operations? Let's discuss your project and how I can help you achieve your goals.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send a Message</h3>
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                                <input type="text" id="company" name="company" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Interested In</label>
+                            <select id="service" name="service" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select a service</option>
+                                <option value="ar-automation">AR Automation & Dashboards</option>
+                                <option value="sap-optimization">SAP FI-AR Optimization</option>
+                                <option value="einvoice">E-Invoice & VAT Tools</option>
+                                <option value="workflow-apps">Workflow Apps Development</option>
+                                <option value="data-automation">Data Cleaning & Automation</option>
+                                <option value="training">Training & Documentation</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your project requirements, current challenges, and expected outcomes..." class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="newsletter" class="mr-2">
+                                <span class="text-sm text-gray-600">Subscribe to newsletter for finance automation tips and insights</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Email</h4>
+                                    <a href="mailto:walahmed.career@gmail.com" class="text-blue-600 hover:text-blue-800">walahmed.career@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fab fa-whatsapp text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">WhatsApp</h4>
+                                    <a href="https://wa.me/201222499250" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800">+20 1222499250</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Response Time</h4>
+                                    <p class="text-gray-600">Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Professional Profiles</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="https://github.com/WalidAhmedx" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition duration-300">
+                                <i class="fab fa-github text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">GitHub</h4>
+                                    <p class="text-sm text-gray-300">Code Portfolio</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.upwork.com/freelancers/waliddatax" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300">
+                                <i class="fab fa-upwork text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Upwork</h4>
+                                    <p class="text-sm text-green-100">Hire Me</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/walidahmedx" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition duration-300">
+                                <i class="fab fa-linkedin text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">LinkedIn</h4>
+                                    <p class="text-sm text-blue-100">Connect</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.youtube.com/@WalidAhmed" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-red-600 text-white rounded-lg hover:bg-red-700 transition duration-300">
+                                <i class="fab fa-youtube text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">YouTube</h4>
+                                    <p class="text-sm text-red-100">Tutorials</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 p-6 rounded-xl text-white">
+                        <h3 class="text-xl font-bold mb-4">Ready to Get Started?</h3>
+                        <p class="mb-4">Schedule a free 30-minute consultation to discuss your project requirements and how I can help achieve your goals.</p>
+                        <button onclick="scheduleConsultation()" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300">
+                            <i class="fas fa-calendar mr-2"></i>Schedule Free Consultation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Walid Ahmed</h3>
+                    <p class="text-gray-300 mb-4">Finance & Data Automation Expert</p>
+                    <p class="text-gray-400 text-sm">Transforming financial operations through intelligent automation and data-driven insights.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#services" class="hover:text-white transition duration-300">AR Automation</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">SAP FI Optimization</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">E-Invoice Solutions</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">Workflow Apps</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">Data Automation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#portfolio" class="hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#dashboard" class="hover:text-white transition duration-300">Live Demo</a></li>
+                        <li><a href="#blog" class="hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="#about" class="hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#contact" class="hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://github.com/WalidAhmedx" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/walidahmedx" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://www.upwork.com/freelancers/waliddatax" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-upwork text-xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@WalidAhmed" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-envelope mr-2"></i>
+                        walahmed.career@gmail.com
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Walid Ahmed. All rights reserved. | Built with passion for finance automation excellence.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMobileMenu = document.getElementById('close-mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.add('active');
+            });
+            
+            closeMobileMenu.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+            });
+            
+            // Close mobile menu when clicking on links
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+            
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Active navigation highlighting
+            const sections = document.querySelectorAll('section[id]');
+            const navItems = document.querySelectorAll('.nav-link');
+            
+            function highlightNavigation() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === `#${current}`) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', highlightNavigation);
+            
+            // Lazy loading animation
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('loaded');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.lazy-load').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Contact form submission
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+                submitBtn.disabled = true;
+                
+                // Simulate form submission (replace with actual form handling)
+                setTimeout(() => {
+                    alert('Thank you for your message! I\'ll get back to you within 24 hours.');
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+        });
+        
+        // Global chart variables
+        let agingChart, trendsChart, deptChart, customerChart, collectionsChart;
+        
+        // Initialize professional charts
+        function initializeCharts() {
+            // AR Aging Analysis Chart
+            const agingCtx = document.getElementById('agingChart').getContext('2d');
+            agingChart = new Chart(agingCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['0-30 Days', '31-60 Days', '61-90 Days', '90+ Days'],
+                    datasets: [{
+                        label: 'Amount ($)',
+                        data: [1200000, 680000, 320000, 200000],
+                        backgroundColor: [
+                            'linear-gradient(135deg, #10B981, #059669)',
+                            'linear-gradient(135deg, #F59E0B, #D97706)',
+                            'linear-gradient(135deg, #EF4444, #DC2626)',
+                            'linear-gradient(135deg, #7C3AED, #5B21B6)'
+                        ],
+                        borderRadius: 8,
+                        borderSkipped: false,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return '$' + (context.parsed.y / 1000).toFixed(0) + 'K';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + (value / 1000).toFixed(0) + 'K';
+                                }
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeInOutQuart'
+                    }
+                }
+            });
+            
+            // Collection Trends Chart
+            const trendsCtx = document.getElementById('trendsChart').getContext('2d');
+            trendsChart = new Chart(trendsCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Collection Efficiency (%)',
+                        data: [78, 82, 85, 79, 88, 87],
+                        borderColor: '#667eea',
+                        backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4,
+                        pointBackgroundColor: '#667eea',
+                        pointBorderColor: '#ffffff',
+                        pointBorderWidth: 2,
+                        pointRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 70,
+                            max: 95,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeInOutQuart'
+                    }
+                }
+            });
+            
+            // Department Performance Chart
+            const deptCtx = document.getElementById('deptChart').getContext('2d');
+            deptChart = new Chart(deptCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Finance', 'Sales', 'Operations'],
+                    datasets: [{
+                        data: [45, 35, 20],
+                        backgroundColor: [
+                            '#667eea',
+                            '#764ba2',
+                            '#f093fb'
+                        ],
+                        borderWidth: 0,
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                usePointStyle: true
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeInOutQuart'
+                    }
+                }
+            });
+            
+            // Customer Distribution Chart
+            const customerCtx = document.getElementById('customerChart').getContext('2d');
+            customerChart = new Chart(customerCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Enterprise', 'SME', 'Individual'],
+                    datasets: [{
+                        data: [60, 30, 10],
+                        backgroundColor: [
+                            '#10B981',
+                            '#F59E0B',
+                            '#EF4444'
+                        ],
+                        borderWidth: 0,
+                        hoverOffset: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                usePointStyle: true
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeInOutQuart'
+                    }
+                }
+            });
+            
+            // Monthly Collections Chart
+            const collectionsCtx = document.getElementById('collectionsChart').getContext('2d');
+            collectionsChart = new Chart(collectionsCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Collections ($M)',
+                        data: [1.8, 2.1, 2.3, 1.9, 2.4, 2.2],
+                        backgroundColor: [
+                            '#667eea',
+                            '#764ba2',
+                            '#f093fb',
+                            '#667eea',
+                            '#764ba2',
+                            '#f093fb'
+                        ],
+                        borderRadius: 8,
+                        borderSkipped: false,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value + 'M';
+                                }
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeInOutQuart'
+                    }
+                }
+            });
+        }
+        
+        // Dashboard functionality
+        function applyFilters() {
+            const dept = document.getElementById('dept-filter').value;
+            const customer = document.getElementById('customer-filter').value;
+            const time = document.getElementById('time-filter').value;
+            
+            // Show loading state
+            showNotification('Applying filters...', 'info');
+            
+            // Animate KPI cards
+            const kpiCards = document.querySelectorAll('.kpi-card');
+            kpiCards.forEach(card => {
+                card.style.transform = 'scale(0.95)';
+                card.style.opacity = '0.7';
+            });
+            
+            // Update data based on filters
+            setTimeout(() => {
+                updateDashboardData(dept, customer, time);
+                updateCharts(dept, customer, time);
+                
+                // Reset card animations
+                kpiCards.forEach(card => {
+                    card.style.transform = 'scale(1)';
+                    card.style.opacity = '1';
+                });
+                
+                showNotification('Filters applied successfully!', 'success');
+            }, 1000);
+        }
+        
+        function updateDashboardData(dept, customer, time) {
+            // Realistic data updates based on filters
+            const dataScenarios = {
+                'finance': {
+                    outstanding: '$1.8M',
+                    overdue: '$320K',
+                    efficiency: '92%',
+                    days: '38'
+                },
+                'sales': {
+                    outstanding: '$2.1M',
+                    overdue: '$410K',
+                    efficiency: '85%',
+                    days: '45'
+                },
+                'operations': {
+                    outstanding: '$1.6M',
+                    overdue: '$280K',
+                    efficiency: '89%',
+                    days: '41'
+                },
+                'all': {
+                    outstanding: '$2.4M',
+                    overdue: '$485K',
+                    efficiency: '87%',
+                    days: '42'
+                }
+            };
+            
+            const customerMultipliers = {
+                'enterprise': 1.3,
+                'sme': 0.8,
+                'individual': 0.6,
+                'all': 1.0
+            };
+            
+            const timeMultipliers = {
+                '30': 0.7,
+                '90': 0.9,
+                '180': 1.1,
+                '365': 1.0
+            };
+            
+            const scenario = dataScenarios[dept] || dataScenarios['all'];
+            const customerMult = customerMultipliers[customer] || 1.0;
+            const timeMult = timeMultipliers[time] || 1.0;
+            
+            // Apply multipliers and update display
+            const baseOutstanding = parseFloat(scenario.outstanding.replace('$', '').replace('M', ''));
+            const baseOverdue = parseFloat(scenario.overdue.replace('$', '').replace('K', ''));
+            
+            const newOutstanding = (baseOutstanding * customerMult * timeMult).toFixed(1);
+            const newOverdue = (baseOverdue * customerMult * timeMult).toFixed(0);
+            
+            document.getElementById('total-outstanding').textContent = `$${newOutstanding}M`;
+            document.getElementById('overdue-amount').textContent = `$${newOverdue}K`;
+            document.getElementById('collection-efficiency').textContent = scenario.efficiency;
+            document.getElementById('avg-days').textContent = scenario.days;
+        }
+        
+        function updateCharts(dept, customer, time) {
+            if (!agingChart || !trendsChart || !deptChart || !customerChart || !collectionsChart) {
+                return;
+            }
+            
+            // Different data sets based on filters
+            const chartData = {
+                'finance': {
+                    aging: [1100000, 580000, 280000, 150000],
+                    trends: [82, 85, 88, 84, 91, 92],
+                    collections: [1.6, 1.9, 2.1, 1.7, 2.2, 2.0],
+                    deptPerf: [55, 30, 15],
+                    customerDist: [70, 25, 5]
+                },
+                'sales': {
+                    aging: [1300000, 720000, 380000, 220000],
+                    trends: [75, 78, 82, 79, 85, 85],
+                    collections: [2.0, 2.3, 2.5, 2.1, 2.6, 2.4],
+                    deptPerf: [35, 45, 20],
+                    customerDist: [50, 35, 15]
+                },
+                'operations': {
+                    aging: [1000000, 520000, 300000, 180000],
+                    trends: [80, 83, 86, 81, 89, 89],
+                    collections: [1.4, 1.7, 1.9, 1.5, 2.0, 1.8],
+                    deptPerf: [25, 35, 40],
+                    customerDist: [65, 30, 5]
+                },
+                'all': {
+                    aging: [1200000, 680000, 320000, 200000],
+                    trends: [78, 82, 85, 79, 88, 87],
+                    collections: [1.8, 2.1, 2.3, 1.9, 2.4, 2.2],
+                    deptPerf: [45, 35, 20],
+                    customerDist: [60, 30, 10]
+                }
+            };
+            
+            const customerMultipliers = {
+                'enterprise': 1.3,
+                'sme': 0.8,
+                'individual': 0.6,
+                'all': 1.0
+            };
+            
+            const timeMultipliers = {
+                '30': 0.7,
+                '90': 0.9,
+                '180': 1.1,
+                '365': 1.0
+            };
+            
+            const currentData = chartData[dept] || chartData['all'];
+            const customerMult = customerMultipliers[customer] || 1.0;
+            const timeMult = timeMultipliers[time] || 1.0;
+            
+            // Update AR Aging Chart
+            const newAgingData = currentData.aging.map(val => Math.round(val * customerMult * timeMult));
+            agingChart.data.datasets[0].data = newAgingData;
+            agingChart.update('active');
+            
+            // Update Collection Trends Chart
+            const newTrendsData = currentData.trends.map(val => Math.round(val * (0.9 + (customerMult * 0.1))));
+            trendsChart.data.datasets[0].data = newTrendsData;
+            trendsChart.update('active');
+            
+            // Update Department Performance Chart
+            deptChart.data.datasets[0].data = currentData.deptPerf;
+            deptChart.update('active');
+            
+            // Update Customer Distribution Chart
+            customerChart.data.datasets[0].data = currentData.customerDist;
+            customerChart.update('active');
+            
+            // Update Monthly Collections Chart
+            const newCollectionsData = currentData.collections.map(val => (val * customerMult * timeMult).toFixed(1));
+            collectionsChart.data.datasets[0].data = newCollectionsData;
+            collectionsChart.update('active');
+        }
+        
+        function exportData(format) {
+            showNotification(`Preparing ${format.toUpperCase()} export...`, 'info');
+            
+            // Gather current dashboard data
+            const currentData = {
+                totalOutstanding: document.getElementById('total-outstanding').textContent,
+                overdueAmount: document.getElementById('overdue-amount').textContent,
+                collectionEfficiency: document.getElementById('collection-efficiency').textContent,
+                avgDays: document.getElementById('avg-days').textContent,
+                filters: {
+                    department: document.getElementById('dept-filter').value,
+                    customer: document.getElementById('customer-filter').value,
+                    timeRange: document.getElementById('time-filter').value
+                }
+            };
+            
+            // Simulate realistic export process
+            setTimeout(() => {
+                if (format === 'csv') {
+                    // Create CSV content
+                    const csvContent = `Metric,Value,Date
+Total Outstanding,${currentData.totalOutstanding},${new Date().toLocaleDateString()}
+Overdue Amount,${currentData.overdueAmount},${new Date().toLocaleDateString()}
+Collection Efficiency,${currentData.collectionEfficiency},${new Date().toLocaleDateString()}
+Average Collection Days,${currentData.avgDays},${new Date().toLocaleDateString()}`;
+                    
+                    // Create and trigger download
+                    const blob = new Blob([csvContent], { type: 'text/csv' });
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `AR_Dashboard_${new Date().toISOString().split('T')[0]}.csv`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    window.URL.revokeObjectURL(url);
+                    
+                    showNotification('CSV file downloaded successfully!', 'success');
+                } else if (format === 'excel') {
+                    // Simulate Excel export
+                    showNotification('Excel export feature coming soon! CSV export available now.', 'info');
+                } else {
+                    showNotification(`${format.toUpperCase()} export completed!`, 'success');
+                }
+            }, 1500);
+        }
+        
+        function generateReport() {
+            showNotification('Generating comprehensive report...', 'info');
+            
+            setTimeout(() => {
+                showNotification('Report generated successfully!', 'success');
+            }, 3000);
+        }
+        
+        function scheduleReport() {
+            const schedule = prompt('Enter schedule (daily/weekly/monthly):');
+            if (schedule) {
+                showNotification(`Report scheduled ${schedule}!`, 'success');
+            }
+        }
+        
+        // Utility functions
+        function downloadCV() {
+            showNotification('CV download will be available soon!', 'info');
+        }
+        
+        function showProjectDetails(project) {
+            const details = {
+                'chloride': 'Detailed case study of the Chloride Egypt multi-role workflow application...',
+                'einvoice': 'Complete overview of the E-Invoice Studio SaaS platform development...',
+                'warehouse': 'Interactive warehouse dashboard with real-time analytics...',
+                'agriculture': 'Agriculture and forestry analytics dashboard case study...',
+                'trading': 'Automated trading tracker for SMEs with ROI insights...'
+            };
+            
+            alert(details[project] || 'Project details coming soon!');
+        }
+        
+        function readBlogPost(post) {
+            showNotification('Blog post will open in full view soon!', 'info');
+        }
+        
+        function loadMorePosts() {
+            showNotification('Loading more blog posts...', 'info');
+        }
+        
+        function scheduleConsultation() {
+            showNotification('Consultation scheduling will be available soon!', 'info');
+        }
+        
+        function showNotification(message, type = 'info') {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg text-white max-w-sm transform translate-x-full transition-transform duration-300`;
+            
+            // Set color based on type
+            switch(type) {
+                case 'success':
+                    notification.classList.add('bg-green-600');
+                    break;
+                case 'error':
+                    notification.classList.add('bg-red-600');
+                    break;
+                case 'warning':
+                    notification.classList.add('bg-yellow-600');
+                    break;
+                default:
+                    notification.classList.add('bg-blue-600');
+            }
+            
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : type === 'warning' ? 'exclamation-triangle' : 'info-circle'} mr-2"></i>
+                    <span>${message}</span>
+                    <button onclick="this.parentElement.parentElement.remove()" class="ml-4 text-white hover:text-gray-200">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+            }, 100);
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    if (notification.parentElement) {
+                        notification.remove();
+                    }
+                }, 300);
+            }, 5000);
+        }
+        
+        // Initialize skill bar animations when about section is visible
+        const aboutSection = document.getElementById('about');
+        const skillBars = document.querySelectorAll('.skill-progress');
+        
+        const skillObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 500);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        if (aboutSection) {
+            skillObserver.observe(aboutSection);
+        }
+        
+        // Initialize charts when dashboard section is visible
+        const dashboardSection = document.getElementById('dashboard');
+        if (dashboardSection) {
+            const chartObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !window.chartsInitialized) {
+                        setTimeout(() => {
+                            initializeCharts();
+                            window.chartsInitialized = true;
+                        }, 500);
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            chartObserver.observe(dashboardSection);
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98976f70075eadb5',t:'MTc1OTYwOTgwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
