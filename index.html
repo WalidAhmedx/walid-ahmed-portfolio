@@ -2176,3 +2176,52 @@ Average Collection Days,${currentData.avgDays},${new Date().toLocaleDateString()
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98976f70075eadb5',t:'MTc1OTYwOTgwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Map assets
+  const photoPath = 'assets/img/walid.png';
+  const cvPath = 'assets/cv/Walid_Ahmed_CV.pdf';
+  const video1 = 'assets/videos/demo-1.mp4';
+  const video2 = 'assets/videos/demo-2.mp4';
+
+  // Replace hero circular icon with photo if present
+  try {
+    const heroCircle = document.querySelector('#home .rounded-full.bg-gradient-to-br');
+    if (heroCircle) {
+      heroCircle.innerHTML = '<img src="'+photoPath+'" alt="Walid Ahmed" style="width:100%;height:100%;object-fit:cover;border-radius:9999px;">';
+      heroCircle.style.background = 'transparent';
+    }
+  } catch(e){}
+
+  // Replace About circular icon with photo
+  try {
+    const aboutCircle = document.querySelector('#about .rounded-full.bg-gradient-to-br');
+    if (aboutCircle) {
+      aboutCircle.innerHTML = '<img src="'+photoPath+'" alt="Walid Ahmed" style="width:100%;height:100%;object-fit:cover;border-radius:9999px;">';
+      aboutCircle.style.background = 'transparent';
+    }
+  } catch(e){}
+
+  // Wire Download CV button
+  try {
+    const btns = Array.from(document.querySelectorAll('button, a')).filter(x => x.textContent && x.textContent.toLowerCase().includes('download cv'));
+    btns.forEach(b => {
+      if (b.tagName.toLowerCase()==='button') {
+        b.onclick = () => { window.open(cvPath, '_blank'); };
+      } else {
+        b.setAttribute('href', cvPath);
+      }
+    });
+  } catch(e){}
+
+  // Inject the two demo videos into the Video Demonstrations section
+  try {
+    const demoCards = document.querySelectorAll('#dashboard .grid.md\\:grid-cols-2 .bg-white.p-6.rounded-lg.shadow .aspect-video');
+    if (demoCards && demoCards.length >= 2) {
+      demoCards[0].innerHTML = '<video controls width="100%" height="100%" style="border-radius:0.5rem;" src="'+video1+'"></video>';
+      demoCards[1].innerHTML = '<video controls width="100%" height="100%" style="border-radius:0.5rem;" src="'+video2+'"></video>';
+    }
+  } catch(e){}
+});
+</script>
